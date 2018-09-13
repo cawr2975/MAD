@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_or_Dog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to see..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GS-1h-bG1">
+                                <rect key="frame" x="16" y="38" width="344" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kub-ve-tBd">
+                                <rect key="frame" x="25" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="Dog"/>
+                                <connections>
+                                    <action selector="dogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpB-ar-J1V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEI-n7-TuG">
+                                <rect key="frame" x="321" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="Cat"/>
+                                <connections>
+                                    <action selector="catButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35u-vi-OYj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8HG-Kp-nFH">
+                                <rect key="frame" x="68" y="173" width="239" height="322"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kub-ve-tBd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="72m-oK-Rki"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8HG-Kp-nFH" secondAttribute="bottom" constant="172" id="79L-ad-9ay"/>
+                            <constraint firstItem="NEI-n7-TuG" firstAttribute="centerY" secondItem="8HG-Kp-nFH" secondAttribute="centerY" id="7p4-tW-iDd"/>
+                            <constraint firstItem="8HG-Kp-nFH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98X-k7-ex0"/>
+                            <constraint firstItem="8HG-Kp-nFH" firstAttribute="centerX" secondItem="5GS-1h-bG1" secondAttribute="centerX" id="CAC-Ie-cUj"/>
+                            <constraint firstItem="5GS-1h-bG1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H3w-61-TCj"/>
+                            <constraint firstItem="5GS-1h-bG1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="HZ2-iq-0pD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NEI-n7-TuG" secondAttribute="trailing" constant="24" id="Hld-v6-nEa"/>
+                            <constraint firstItem="NEI-n7-TuG" firstAttribute="baseline" secondItem="Kub-ve-tBd" secondAttribute="baseline" id="NwV-OO-odk"/>
+                            <constraint firstItem="NEI-n7-TuG" firstAttribute="leading" secondItem="8HG-Kp-nFH" secondAttribute="trailing" constant="14" id="SMW-FD-J8C"/>
+                            <constraint firstItem="8HG-Kp-nFH" firstAttribute="leading" secondItem="Kub-ve-tBd" secondAttribute="trailing" constant="13" id="ilJ-OE-O1c"/>
+                            <constraint firstItem="NEI-n7-TuG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zO4-JE-SAT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImage" destination="8HG-Kp-nFH" id="HOJ-Fd-eS0"/>
+                        <outlet property="myLabel" destination="5GS-1h-bG1" id="PBy-5W-vtC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
