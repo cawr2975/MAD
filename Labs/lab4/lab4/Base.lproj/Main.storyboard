@@ -18,16 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birthday Card Generator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqJ-qB-g5z">
-                                <rect key="frame" x="94" y="20" width="187" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-eQ-6GY">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-eQ-6GY">
                                 <rect key="frame" x="195" y="116" width="164" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
@@ -35,9 +27,8 @@
                                     <action selector="userName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="a62-Cw-7qE"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KU7-Pe-lVc">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KU7-Pe-lVc">
                                 <rect key="frame" x="195" y="209" width="164" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -45,31 +36,48 @@
                                     <action selector="birthday:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="FEb-uz-QXn"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TL-aw-Zcy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TL-aw-Zcy">
                                 <rect key="frame" x="86" y="214" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Person name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-30-FRJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-30-FRJ">
                                 <rect key="frame" x="51" y="118" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqM-Zo-yY8">
-                                <rect key="frame" x="163" y="328" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqM-Zo-yY8">
+                                <rect key="frame" x="309" y="328" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <segue destination="7Um-MD-A7S" kind="presentation" modalTransitionStyle="flipHorizontal" id="vrU-aw-et5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Birthday Card Generator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqJ-qB-g5z">
+                                <rect key="frame" x="94" y="20" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ODg-eQ-6GY" firstAttribute="leading" secondItem="fK5-30-FRJ" secondAttribute="trailing" constant="44" id="1A7-c4-b93"/>
+                            <constraint firstItem="fK5-30-FRJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="1wb-pM-IeP"/>
+                            <constraint firstItem="HqM-Zo-yY8" firstAttribute="top" secondItem="KU7-Pe-lVc" secondAttribute="bottom" constant="89" id="4mx-Cx-FKD"/>
+                            <constraint firstItem="ODg-eQ-6GY" firstAttribute="top" secondItem="JqJ-qB-g5z" secondAttribute="bottom" constant="75" id="4sb-UX-ZA4"/>
+                            <constraint firstItem="fK5-30-FRJ" firstAttribute="centerX" secondItem="9TL-aw-Zcy" secondAttribute="centerX" id="CpT-Ee-idf"/>
+                            <constraint firstItem="JqJ-qB-g5z" firstAttribute="centerX" secondItem="HqM-Zo-yY8" secondAttribute="centerX" id="M4o-QR-koJ"/>
+                            <constraint firstItem="9TL-aw-Zcy" firstAttribute="top" secondItem="fK5-30-FRJ" secondAttribute="bottom" constant="75" id="MD3-ju-dmR"/>
+                            <constraint firstItem="JqJ-qB-g5z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YXm-tB-UNE"/>
+                            <constraint firstItem="9TL-aw-Zcy" firstAttribute="centerY" secondItem="KU7-Pe-lVc" secondAttribute="centerY" id="blN-X4-Qkt"/>
+                            <constraint firstItem="ODg-eQ-6GY" firstAttribute="leading" secondItem="KU7-Pe-lVc" secondAttribute="leading" id="jU0-J5-59G"/>
+                            <constraint firstItem="KU7-Pe-lVc" firstAttribute="top" secondItem="ODg-eQ-6GY" secondAttribute="bottom" constant="63" id="nQk-yJ-SjQ"/>
+                            <constraint firstItem="ODg-eQ-6GY" firstAttribute="trailing" secondItem="KU7-Pe-lVc" secondAttribute="trailing" id="to2-Vr-2Xu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="8wg-Ri-Jcx" appends="YES" id="Xf8-ei-O4M"/>
@@ -115,9 +123,6 @@
                                 <rect key="frame" x="170" y="453" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="IYI-sI-kU9"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy Birthday, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrG-Ox-ygH">
                                 <rect key="frame" x="70" y="98" width="127" height="21"/>
